@@ -77,7 +77,7 @@ function Cart() {
           <div className={styles.footer}>
             <p className={styles.total}>
               Итого:
-              <span>{` ${totalSum.toFixed(2)} $`}</span>
+              <span className={styles.sum}>{` ${totalSum.toFixed(2)} $`}</span>
             </p>
             <button
               className={styles.delete}

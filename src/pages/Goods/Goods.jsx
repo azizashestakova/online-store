@@ -31,7 +31,7 @@ function Goods() {
     <React.Fragment>
       <Cart numberOfProductsInCart={numberOfProductsInCart} />
       <h1>Список товаров</h1>
-      {isLoading && (
+      {isLoading && products.length === 0 && (
         <Preloader />
       )}
       {products.length !== 0 && (
